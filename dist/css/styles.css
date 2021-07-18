@@ -142,7 +142,7 @@ hr {
 }
 
 .content hr, .content h1 {
-  margin: 40px;
+  margin: 40px auto;
   text-align: center;
 }
 
