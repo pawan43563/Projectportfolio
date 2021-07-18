@@ -1,0 +1,11 @@
+// all definitions of screen sizes
+@mixin extrasmallDevices{
+    @media (max-width:575.98px){
+        @content;
+    }
+}
+@mixin smallDevices{
+    @media (max-width:768px){
+        @content;
+    }
+}

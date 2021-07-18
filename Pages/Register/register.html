@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/styles/register.css">
+
+</head>
+
+
+
+<body >
+    <button id="Dark" onclick="change()">
+        Change Theme
+    </button>
+    <div>
+        <form action="/" method="POST" >
+            <label for="firstname">Name</label>
+            <input type="text" id="firstname" name="firstname" />
+            <br />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+            <br />
+            <label for="company">Company</label>
+            <input type="radio" name="company" vaLue="CS">Contentstack</input>
+            <input type="radio" name="company" vaLue="RE">Raw Engineering</input>
+            <input type="radio" name="company" vaLue="sb">Surfboard</input>
+            <input type="radio" name="company" vaLue="ED">EDBA</input>
+            <br />
+            <label for="benefits">Benefits</label>
+            <input type="checkbox" name="benefits" value="MI">Medical Insurance</input>
+            <input type="checkbox" name="benefits" value="TI">Term Insurance</input>
+            <input type="checkbox" name="benefits" value="PI">Parental Insurance</input>
+            <br />
+            <label for="shift">Select a Shift</label>
+            <select name="shift" id="shift">
+                <option value="N">Night Shift</option>
+                <option value="D" selected>Day</option>
+                <option value="AF">Afternoon</option>
+            </select>
+            <br />
+            <button>Submit</button>
+        </form>
+    </div>
+
+<script>
+    function change(){
+        if (document.body.classList.contains("body1")){
+            document.body.classList.remove("body1")
+        }else{
+            document.body.classList.add("body1")
+        }
+        
+    }
+</script>
+
+</body>
+
+</html>

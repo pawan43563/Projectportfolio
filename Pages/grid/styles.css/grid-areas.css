@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.textcenter{
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    width:50%;
+    height: 100vh;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 20vh 60vh 20vh;
+    grid-template-areas: "nav nav"
+    "content aside"
+    "footer footer";
+    border:2px solid red;
+}
+
+.navigation{
+    background-color: black;
+    grid-area: nav;
+
+    /* Element into inline */
+    /* justify-self: center;
+    align-self: end; */
+
+}
+.content{
+    background-color: blue;
+
+}
+
+.aside{
+    background-color: chocolate;
+
+}
+
+.footer{
+    background-color: crimson;
+    grid-area: footer;
+}

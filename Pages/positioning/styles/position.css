@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+    width:60%;
+    height: 100px;
+    border:2px solid black;
+    margin:20px auto;
+}
+
+.container{
+    width: 100vw;
+    height: 50vh;
+    border:5px solid red;
+}
+
+.center-text{
+    text-align: center;
+    margin-top:40px;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 10px;
+    background-color: grey;
+    color:white;
+}
+
+/* for absolute search for parent if it is relative thn okay otherwise go one level up and adjust to that */

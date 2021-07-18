@@ -1,0 +1,145 @@
+@import "variable";
+@import "mixins";
+@import "_media_queries";
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+a{
+    color:$secondaryBackground;
+}
+
+
+.navigation{
+
+    background-color: $secondaryColour;
+    // @include flex-row;
+    // justify-content: space-between;
+    // align-items: center;
+    @include flex-placement(row,space-between,center);
+}
+
+.logo{
+    min-width: 200px;
+    width:15%;
+    img{
+        width:100%
+    }
+}
+
+
+
+.nav-container{
+    width:60%;
+    // display: flex;
+    // justify-content: flex-end;
+    // @include flex-placement(row,flex-end,center);
+    @include flex-placement($align:center,$justify:flex-end);
+    li{
+        margin-left:20px;
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color:$secondaryBackground;
+            &:hover{
+                border-bottom: 2px solid $primaryBackground;
+            }
+        }
+            
+
+    }
+    :last-child{
+        a{
+            margin-right:10px;
+        }
+    }
+
+    // applying media query
+    // @media (max-width:575.98px){
+    //     display: none;
+    // }
+    // @include extrasmallDevices{
+    //     display: none;
+    // }
+}
+
+
+
+// @media only screen and (max-width:575.98px) {
+//     .nav-container{
+//         display: none;
+//     }
+//     .menu{
+//         display: unset;
+//     }
+    
+// }
+
+.btn{
+    background-color: $ctaColour;
+    color:$secondaryBackground;
+}
+
+.btn a{
+    color:$secondaryBackground;
+}
+
+
+
+
+
+
+@mixin roundedBorder{
+    border-radius: 40px;
+    font-size: 2rem;
+    color:$secondaryBackground;
+}
+
+.banner{
+    background-color:$primaryBackground;
+    color:$ctaColour;
+    height: 60vh;
+    font-size: $fontSize;
+}
+// .cta{
+//     padding: $ctaPadding;
+//     border-radius: $radius;
+//     background-color: $ctaColour;
+// }
+.menu{
+    display: none;
+    img{
+        width: 50px;
+        height: 50px;
+
+
+    }
+    // @media (max-width:576){
+    //     display: unset;
+    // }
+
+}
+
+
+.box{
+    @include roundedBorder;
+    background-color: $ctaColour;
+    height: 200px;
+    width: 80%;
+    margin:30px auto;
+
+}
+
+@include extrasmallDevices{
+    .nav-container{
+        display: none;
+    }
+    .menu{
+        display: unset;
+        margin-right: 10px;;
+    }
+}

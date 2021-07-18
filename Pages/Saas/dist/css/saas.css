@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #feffff;
+}
+
+.navigation {
+  background-color: #2b7a78;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  min-width: 200px;
+  width: 15%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container li {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.nav-container li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #feffff;
+}
+
+.nav-container li a:hover {
+  border-bottom: 2px solid #def2f1;
+}
+
+.nav-container :last-child a {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #17252a;
+  color: #feffff;
+}
+
+.btn a {
+  color: #feffff;
+}
+
+.banner {
+  background-color: #def2f1;
+  color: #17252a;
+  height: 60vh;
+  font-size: 2rem;
+}
+
+.menu {
+  display: none;
+}
+
+.menu img {
+  width: 50px;
+  height: 50px;
+}
+
+.box {
+  border-radius: 40px;
+  font-size: 2rem;
+  color: #feffff;
+  background-color: #17252a;
+  height: 200px;
+  width: 80%;
+  margin: 30px auto;
+}
+
+@media (max-width: 575.98px) {
+  .nav-container {
+    display: none;
+  }
+  .menu {
+    display: unset;
+    margin-right: 10px;
+  }
+}
