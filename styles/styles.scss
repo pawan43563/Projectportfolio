@@ -82,8 +82,9 @@ a{
 }
 hr{
     width:100px;
-    margin: auto;
+    margin:40px auto;
     border: 1px solid blue;
+
 
 }
 .content{
@@ -91,8 +92,8 @@ hr{
     background-repeat: no-repeat;
     background-position: top left, right center,bottom left;
     margin:40px auto;
-    hr,h1{
-        margin:40px auto;
+    h1{
+        margin:40px ;
         text-align: center;
     }
     .html{

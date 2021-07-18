@@ -130,7 +130,7 @@ a {
 
 hr {
   width: 100px;
-  margin: auto;
+  margin: 40px auto;
   border: 1px solid blue;
 }
 
@@ -141,8 +141,8 @@ hr {
   margin: 40px auto;
 }
 
-.content hr, .content h1 {
-  margin: 40px auto;
+.content h1 {
+  margin: 40px;
   text-align: center;
 }
 
