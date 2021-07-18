@@ -19,7 +19,7 @@ a{
 
 
 .navigation{
-    background-color: #22d1ee;
+    background-color: #81D5F9;
     position: sticky;
     top:0px;
     box-shadow: 0 8px 6px -10px blue;
@@ -92,7 +92,7 @@ hr{
     background-position: top left, right center,bottom left;
     margin:40px auto;
     hr,h1{
-        margin-top:40px;
+        margin:40px;
         text-align: center;
     }
     .html{
@@ -184,13 +184,16 @@ span{
 
 .footer{
     padding: 20px;
-    background-color: #add5f7;
+    background-color: #81D5F9;
     .contact{
         font-size: 30px;
         text-align: center;
         a{
             margin:20px;
-            color: #163172;
+            color: black;
+            &:hover{
+                color:#163172;
+            }
         }
     }
     .copyright{

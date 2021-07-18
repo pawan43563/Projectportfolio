@@ -16,7 +16,7 @@ a {
 }
 
 .navigation {
-  background-color: #22d1ee;
+  background-color: #81D5F9;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -142,7 +142,7 @@ hr {
 }
 
 .content hr, .content h1 {
-  margin-top: 40px;
+  margin: 40px;
   text-align: center;
 }
 
@@ -312,7 +312,7 @@ span {
 
 .footer {
   padding: 20px;
-  background-color: #add5f7;
+  background-color: #81D5F9;
 }
 
 .footer .contact {
@@ -322,6 +322,10 @@ span {
 
 .footer .contact a {
   margin: 20px;
+  color: black;
+}
+
+.footer .contact a:hover {
   color: #163172;
 }
 
